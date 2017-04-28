@@ -7,7 +7,65 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
   </head>
   <body>
-  
+    <form class="" >
+            <h2 id="form-title">
+              Datos Personales
+            </h2>
+            <div class="name-box">
+              <label for="name" class="">Nombre</label>
+              <input type="text" id="name" class=""
+              placeholder="Ingrese su nombre" pattern="[A-Z]{1}[a-z]+" required title="La primera letra en mayúscula">
+            </div>
+            <div class="lastname-box">
+              <label for="lastname" class="">Apellido</label>
+              <input type="text" id="lastname" class=""
+              placeholder="Ingrese su apellido" pattern="[A-Z]{1}[a-z]+" required title="La primera letra en mayúscula"   >
+            </div>
+            <div class="dni-box">
+              <label for="dni" class="">DNI</label>
+              <input type="text" id="DNI" class=""
+              placeholder="Ingrese su DNI" pattern="^[1-9 0]{8}" required title="Solo números">
+            </div>
+            <div class="birthday-box">
+              <label for="birthday" class="">Fecha de Nacimiento</label>
+              <input type="date" id="birthday" class=""
+              placeholder="Ingrese su Fecha de Nacimiento">
+            </div>
+            <div class="movil-box">
+              <label for="movil" class="">Celular</label>
+              <input type="text" id="movil" class=""
+              placeholder="Ingrese su número de celular">
+            </div>
+            <div class="phone-box">
+              <label for="phone" class="">Teléfono</label>
+              <input type="text" id="phone" class=""
+              placeholder="Ingrese su número de teléfono fijo">
+            </div>
+            <div class="email-box">
+              <label for="email" class="sr-only">Correo Electrónico</label>
+              <input type="email" id="email" class="" placeholder="Ingrese su correo electrónico">
+            </div>
+            <div class="Password-box">
+              <label for="Password" class="">Contraseña</label>
+              <input type="password" id="password" class="" placeholder="Ingrese su contraseña">
+            </div>
+            <div class="confirm-password-box">
+              <label for="confirm-password" class="">Confirme su Contraseña</label>
+              <input type="text" id="confirm-password" class=""
+              placeholder="Ingrese su contraseña nuevamente">
+            </div>
+            <div class="coment-box">
+              <label for="coment" class="">Comentarios</label>
+              <textarea name="" rows="8" cols="60">Ingrese su comentario</textarea>
+            </div>
+            <div class="checkbox ">
+              <label>
+                <input type="checkbox" value="">
+                <span>Acepto los términos y condiciones</span>
+              </label>
+            </div>
+            <button class="send" type="submit">Registrar Datos</button>
+          </form>
 
   </body>
 </html>
