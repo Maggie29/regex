@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
 }
 form{
@@ -9,3 +10,16 @@ form{
 div{
   margin-bottom: 1em;
 }
+=======
+
+
+form{
+margin: 0;
+padding: 15px;
+margin-bottom: 10px;
+position: absolute;
+left: 600px;
+width: 500px
+
+}
+>>>>>>> 81e8c9bf9456b285740c3854b34659aaa0ce05a2
