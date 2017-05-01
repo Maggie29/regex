@@ -12,61 +12,62 @@
               Datos Personales
             </h2>
             <div class="name-box">
-              <label for="name" class="">Nombre</label>
-              <input type="text" id="name" class=""
+              <label for="name" class="">Nombre:</label>
+              <input type="text" id="name" class="pos-absol"
               placeholder="Ingrese su nombre" pattern="[A-Z]{1}[a-z]+" required title="La primera letra en mayúscula">
             </div>
             <div class="lastname-box">
-              <label for="lastname" class="">Apellido</label>
-              <input type="text" id="lastname" class=""
+              <label for="lastname" class="">Apellido:</label>
+              <input type="text" id="lastname" class="pos-absol"
               placeholder="Ingrese su apellido" pattern="[A-Z]{1}[a-z]+" required title="La primera letra en mayúscula"   >
             </div>
             <div class="dni-box">
-              <label for="dni" class="">DNI</label>
-              <input type="text" id="DNI" class=""
-              placeholder="Ingrese su DNI" pattern="^[1-9]{1}[0-9]{7}$" required
+              <label for="dni" class="">DNI:</label>
+              <input type="text" id="DNI" class="pos-absol"
+              placeholder="Ingrese su DNI" pattern="^[0-9]{8}$" required
               title="Solo números.Ocho digítos. No debe comenzar con cero.">
             </div>
             <div class="birthday-box">
-              <label for="birthday" class="">Fecha de Nacimiento</label>
-              <input type="date" id="birthday" class="" required >
+              <label for="birthday" class="">Fecha de Nacimiento:</label>
+              <input type="date" id="birthday" class="pos-absol" required >
             </div>
              <div class="movil-box">
-              <label for="movil" class="">Celular</label>
-              <input type="text" id="movil" class="" placeholder="Ingrese su número móvil"
-              required pattern="^9[0-9]{8}$s">
+              <label for="movil" class="">Celular:</label>
+              <input type="text" id="movil" class="pos-absol" placeholder="Ingrese su número móvil"
+              required pattern="^9[0-9]{8}$" title="Sólo números. Nueve dígitos. Debe comenzar con nueve">
             </div>
             <div class="phone-box">
-              <label for="phone" class="">Teléfono</label>
-              <input type="text" id="phone" class=""
-              placeholder="Ingrese su número de teléfono fijo" required pattern="^[2-8]{1}[0-9]{6}$">
+              <label for="phone" class="">Teléfono:</label>
+              <input type="text" id="phone" class="pos-absol"
+              placeholder="Ingrese su número teléfonico fijo" required pattern="^[2-8]{1}[0-9]{6}$" title="Sólo números. Siete dígitos">
             </div>
             <div class="email-box">
-              <label for="email" class="sr-only">Correo Electrónico</label>
-              <input type="email" id="email" class="" placeholder="Ingrese su correo electrónico" required
+              <label for="email" class="sr-only">Correo Electrónico:</label>
+              <input type="email" id="email" class="pos-absol" placeholder="Ingrese su correo electrónico" required
               pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$">
             </div>
             <div class="Password-box">
-              <label for="Password" class="">Contraseña</label>
-              <input type="password" id="password" class="" placeholder="Ingrese su contraseña" required>
+              <label for="Password" class="">Contraseña:</label>
+              <input type="password" id="password" class="pos-absol" placeholder="Ingrese su contraseña" required>
             </div>
             <div class="confirm-password-box">
-              <label for="confirm-password" class="">Confirme su Contraseña</label>
-              <input type="password" id="confirm-password" class=""
-              placeholder="Ingrese su contraseña nuevamente">
+              <label for="confirm-password" class="">Confirme su Contraseña:</label>
+              <input type="password" id="confirm-password" class="pos-absol"
+              placeholder="Confirme su constraseña"><br>
+              <span id="message-error"></span>
             </div>
             <div class="coment-box">
-              <label for="coment" class="">Comentarios</label>
+              <label for="coment" class="">Comentarios:</label>
               <textarea name="" rows="8" cols="60" placeholder="Ingrese su comentario" required></textarea>
             </div>
             <div class="checkbox ">
-              <label>
                 <input type="checkbox" value="" required>
-                <span>Acepto los términos y condiciones</span>
-              </label>
+                <span>Acepto los <a href="#">términos y condiciones</a></span>
             </div>
-            <button class="send" type="submit">Registrar Datos</button>
+            <button class="send" type="submit" id="send">Registrar Datos</button>
           </form>
+          <script type="text/javascript" src="assets/js/app.js">
 
+          </script>
   </body>
 </html>

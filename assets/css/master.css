@@ -1,16 +1,48 @@
 
 body{
+  background: #4E8D96;
 }
 form{
-  border: 1.5px solid grey;
+  font-family: "Garamond";
+  color: #5A575E;
+  background:#D4E3E2;
+  border: 1.5px;
   padding: 1em;
   margin-bottom: 10px;
   width: 450px;
-  position: absolute;
-  left: 500px;
+  position: relative;
+  left: 650px;
+  height: 600px;
+}
 
+h2{
+  background: #82B4B1;
+  text-align: center;
+  padding: 5px;
 }
 div{
   margin-bottom: .75em;
-
+}
+.pos-absol{
+  position: absolute;
+  left: 190px;
+  border: none;
+  font-family: "cormorant";
+  width: 190px;
+}
+textarea{
+  border: none;
+  font-family: "cormorant";
+}
+button{
+  background: #82B4B1;
+  border: none;
+  color: #5A575E;
+  padding: 5px;
+  font-family: garamond;
+  font-size: 1.2em;
+  text-align: center;
+  width: 200px;
+  left: 141px;
+  position: absolute;
 }
